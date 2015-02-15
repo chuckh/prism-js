@@ -1,6 +1,6 @@
 {
   "name": "prism-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "web-component",
     "web-components",
@@ -15,9 +15,8 @@
     "tests"
   ],
   "dependencies": {
-    "prismjs": "*",
-    "he": "~0.3.6",
-    "polymer": "Polymer/polymer#~0.3.5",
-    "core-input": "Polymer/core-input#~0.3.5"
+    "prism": "gh-pages",
+    "he": "~0.5",
+    "polymer": "Polymer/polymer#~0.5.4"
   }
 }

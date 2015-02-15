@@ -2,7 +2,7 @@
 <link rel="import" href="../polymer/polymer.html">
 
 <!-- include prism -->
-<script src="../prismjs/prism.js"></script>
+<script src="../prism/prism.js"></script>
 
 <!-- include he for escaping -->
 <script src="../he/he.js"></script>
@@ -234,13 +234,8 @@ Specify a language and theme:
         * @method injectTheme
         */
         injectTheme: function () {
-          var cssFile;
-          if (this.theme.length > 0) {
-            cssFile = '../prismjs/prism-' + this.theme + '.css';
-          } else {
-            cssFile = '../prismjs/prism.css';
-          }
-          this.injectStylesheet(cssFile);
+          var themeSuffix = this.theme ? '-' + this.theme : '';
+          this.injectStylesheet('../prism/themes/prism' + themeSuffix + '.css');
         },
 
         injectPluginStylesheets: function () {
